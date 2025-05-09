@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "sudoku-app": {
+    "BreadTheGood.github.io": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,8 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/sudoku-app",
+            "outputPath": "dist/BreadTheGood.github.io",
+            "baseHref": "/BreadTheGood.github.io/",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -69,10 +70,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "sudoku-app:build:production"
+              "buildTarget": "BreadTheGood.github.io:build:production"
             },
             "development": {
-              "buildTarget": "sudoku-app:build:development"
+              "buildTarget": "BreadTheGood.github.io:build:development"
             }
           },
           "defaultConfiguration": "development"
